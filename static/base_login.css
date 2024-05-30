@@ -1,0 +1,17 @@
+#header_ul {
+        list-style-position: inside;
+        overflow: hidden;
+        padding-right: 3%;
+}
+
+.header_li {
+        display: inline-block;
+        margin: 0 3px;
+        border-right: 1px solid grey;
+        padding-right: 3px;
+        list-style-type: none;
+        float: right;
+}
+.header_li:hover {
+        cursor: default;
+}

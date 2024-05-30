@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<link rel='stylesheet' href="{{url_for('static', filename='base_content.css')}}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		{% block head %}
+		<title>AdesinaOla</title>
+		{% endblock %}
+	</head>
+	<body>
+		<header>
+			<h1>AdesinaOla</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href='/africa'>AFRICA</a></li>
+        			<li><a href='/history'>HISTORY</a></li>
+			        <li><a href='/culture'>CULTURE</a></li>
+			        <li><a href='/language'>LANGUAGE</a></li>
+			        <li><a href='/nature'>NATURE</a></li>
+			</ul>
+		</nav>
+
+		<div id='side'>
+			{% block side %}
+
+			{% endblock %}
+		</div>
+
+		<div id='content'>
+			<iframe name='content_frame'></iframe>
+		</div>
+
+		<footer>
+			<ul>
+				<li><a href='http://wa.me/+2348103230934?text=Hi,+I+got+your+number+from+AdesinaOla+site.' target='_blank'><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+				<li><a href='tel:+2348103230934' target='_blank'><i class="fa fa-phone"></i> Phone</a></li>
+				<li><a href='mailto:daadesina1@gmail.com?subject=From%20AdesinaOla%20site&body=Good%20day' target='_blank'><i class="fa fa-envelope"></i> Email</a></li>
+			</ul>
+                        <div>
+                                <h4 class='copy_text'>&copy 2024</h4>
+                        </div>
+		</footer>
+	</body>
+</html>
